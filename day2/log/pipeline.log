@@ -1,11 +1,14 @@
-2026-09-23 10:00:19,282 | INFO | Pipeline started
-2026-09-23 10:00:19,283 | INFO | Discovered 2 files: ['customers.csv', 'products.json']
-2026-09-23 10:00:19,285 | INFO | Customers loaded: 15
-2026-09-23 10:00:19,285 | INFO | Products loaded: 11
-2026-09-23 10:00:19,286 | INFO | customers.csv structure GOOD
-2026-09-23 10:00:19,287 | INFO | products.json structure GOOD
-2026-09-23 10:00:19,302 | INFO | Customers: 12 valid, 3 rejected
-2026-09-23 10:00:19,303 | WARNING | 3 customer records rejected
-2026-09-23 10:00:19,303 | INFO | Products: 9 valid, 2 rejected
-2026-09-23 10:00:19,304 | WARNING | 2 product records rejected
-2026-09-23 10:00:19,308 | INFO | Pipeline finished
+2026-09-23 10:31:12,962 | INFO | Pipeline started
+2026-09-23 10:31:12,963 | INFO | Discovered 2 files: ['chesee.csv', 'products.json']
+2026-09-23 10:31:12,963 | ERROR | ERROR: day2\data\input\customers.csv does not exist
+2026-09-23 10:31:34,866 | INFO | Pipeline started
+2026-09-23 10:31:34,867 | INFO | Discovered 2 files: ['customers.csv', 'products.json']
+2026-09-23 10:31:34,867 | INFO | customers.csv structure GOOD
+2026-09-23 10:31:34,868 | INFO | products.json structure GOOD
+2026-09-23 10:31:34,869 | INFO | Customers loaded: 15
+2026-09-23 10:31:34,869 | INFO | Products loaded: 11
+2026-09-23 10:31:34,873 | INFO | Customers: 12 valid, 3 rejected
+2026-09-23 10:31:34,873 | WARNING | 3 customer records rejected
+2026-09-23 10:31:34,875 | INFO | Products: 9 valid, 2 rejected
+2026-09-23 10:31:34,875 | WARNING | 2 product records rejected
+2026-09-23 10:31:34,878 | INFO | Pipeline finished

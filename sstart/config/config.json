@@ -1,0 +1,7 @@
+{
+  "input_dir": "../provided_data/day6_assessment_input",
+  "output_dir": "data/output",
+  "reject_dir": "data/rejects",
+  "log_dir": "logs",
+  "processed_dir": "data/processed"
+}

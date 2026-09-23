@@ -35,18 +35,7 @@ for files in input_folder.iterdir():
 
 logger.info(f"Discovered {len(discovered_files)} files: {[f.name for f in discovered_files]}")
 
-# --- Lab 2.2 ---
-with open(input_folder/"customers.csv") as cus_f:
-    reader = csv.DictReader(cus_f)
-    customers = list(reader)
-
-with open(input_folder/"products.json") as prod_f:
-    products = json.load(prod_f)
-
-logger.info(f"Customers loaded: {len(customers)}")
-logger.info(f"Products loaded: {len(products)}")
-
-# --- Lab 2.3 ---
+# --- Lab 2.2 & Lab 2.3 ---
 cus_fields = ["customer_id", "customer_name", "email", "city", "state", "signup_date", "customer_segment"]
 prod_fields = ["product_id", "product_name", "category", "brand", "cost_price", "list_price"]
 cus_path = input_folder / "customers.csv"
@@ -61,6 +50,16 @@ try:
 except DataValidationError as e:
     logger.error(str(e))
     raise SystemExit(1)
+
+with open(input_folder/"customers.csv") as cus_f:
+    reader = csv.DictReader(cus_f)
+    customers = list(reader)
+
+with open(input_folder/"products.json") as prod_f:
+    products = json.load(prod_f)
+
+logger.info(f"Customers loaded: {len(customers)}")
+logger.info(f"Products loaded: {len(products)}")
 
 # --- Lab 2.4 ---
 output_folder = Path(config["data_output"])
