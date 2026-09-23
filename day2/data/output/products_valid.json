@@ -1,0 +1,74 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Product 1",
+    "category": "Electronics",
+    "brand": "Aster",
+    "cost_price": 217.0,
+    "list_price": 288.61
+  },
+  {
+    "product_id": 2,
+    "product_name": "Product 2",
+    "category": "Home",
+    "brand": "BluePeak",
+    "cost_price": 254.0,
+    "list_price": 358.14
+  },
+  {
+    "product_id": 3,
+    "product_name": "Product 3",
+    "category": "Sports",
+    "brand": "Cobalt",
+    "cost_price": 291.0,
+    "list_price": 433.59
+  },
+  {
+    "product_id": 4,
+    "product_name": "Product 4",
+    "category": "Books",
+    "brand": "Dynamo",
+    "cost_price": 328.0,
+    "list_price": 410.0
+  },
+  {
+    "product_id": 5,
+    "product_name": "Product 5",
+    "category": "Fashion",
+    "brand": "Evergreen",
+    "cost_price": 365.0,
+    "list_price": 485.45
+  },
+  {
+    "product_id": 6,
+    "product_name": "Product 6",
+    "category": "Electronics",
+    "brand": "Aster",
+    "cost_price": 402.0,
+    "list_price": 566.82
+  },
+  {
+    "product_id": 7,
+    "product_name": "Product 7",
+    "category": "Home",
+    "brand": "BluePeak",
+    "cost_price": 439.0,
+    "list_price": 654.11
+  },
+  {
+    "product_id": 8,
+    "product_name": "Product 8",
+    "category": "Sports",
+    "brand": "Cobalt",
+    "cost_price": 476.0,
+    "list_price": 595.0
+  },
+  {
+    "product_id": 99,
+    "product_name": "Product 6",
+    "category": "Electronics",
+    "brand": "Aster",
+    "cost_price": 9000.0,
+    "list_price": 5000.0
+  }
+]

@@ -1,0 +1,16 @@
+customer_id,customer_name,email,city,state,signup_date,customer_segment
+1,Customer 1,customer1@example.com,Chennai,Tamil Nadu,2026-01-04,Premium
+2,Customer 2,customer2@example.com,Bengaluru,Karnataka,2026-02-07,Corporate
+3,Customer 3,customer3@example.com,Hyderabad,Telangana,2026-03-10,Standard
+4,Customer 4,customer4@example.com,Mumbai,Maharashtra,2026-04-13,Premium
+5,Customer 5,customer5@example.com,Pune,Maharashtra,2026-05-16,Corporate
+6,Customer 6,customer6@example.com,Kochi,Kerala,2026-06-19,Standard
+7,Customer 7,customer7@example.com,chennai,Tamil Nadu,2026-07-22,Premium
+8,Customer 8,customer8@example.com,Bengaluru,KARNATAKA,2026-08-25,Corporate
+9,Customer 9,CUSTOMER9@EXAMPLE.COM ,Hyderabad,Telangana,2026-01-01,Standard
+10,Customer 10,customer10@example.com,Mumbai,Maharashtra,2026-02-04,Premium
+11,Customer 11,customer11@example.com,Pune,Maharashtra,2026-03-07,Corporate
+12,Customer 12,customer12@example.com,Kochi,Kerala,2026-04-10,Standard
+3,Customer 3,customer3@example.com,Hyderabad,Telangana,2026-03-10,Standard
+,Customer 5,missing@example.com,Pune,Maharashtra,2026-05-16,Corporate
+99,Customer 7,customer7@example.com,chennai,Tamil Nadu,2026-14-03,Premium

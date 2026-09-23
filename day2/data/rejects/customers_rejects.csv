@@ -1,0 +1,4 @@
+customer_id,customer_name,email,city,state,signup_date,customer_segment,rejection_reason
+3,Customer 3,customer3@example.com,Hyderabad,Telangana,2026-03-10,Standard,customer_id 3 is a duplicate
+,Customer 5,missing@example.com,Pune,Maharashtra,2026-05-16,Corporate,customer_id is not a valid integer
+99,Customer 7,customer7@example.com,chennai,Tamil Nadu,2026-14-03,Premium,signup_date is not in YYYY-MM-DD format

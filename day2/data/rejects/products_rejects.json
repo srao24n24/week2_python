@@ -1,0 +1,20 @@
+[
+  {
+    "product_id": 2,
+    "product_name": "Product 2",
+    "category": "Home",
+    "brand": "BluePeak",
+    "cost_price": 254,
+    "list_price": 358.14,
+    "rejection_reason": "product_id 2 is a duplicate"
+  },
+  {
+    "product_id": "",
+    "product_name": "Product 4",
+    "category": "Books",
+    "brand": "Dynamo",
+    "cost_price": 328,
+    "list_price": 410.0,
+    "rejection_reason": "product_id is not a valid integer"
+  }
+]
