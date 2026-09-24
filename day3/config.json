@@ -1,0 +1,6 @@
+{
+    "data_input" : "day3/data/input",
+    "data_output" : "day3/data/output",
+    "data_rejects" : "day3/data/rejects",
+    "log" : "day3/log"
+}
