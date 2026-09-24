@@ -1,0 +1,5 @@
+dataset,input_count,valid_count,rejected_count,duplicate_count,missing_key_count
+customers,103,100,3,1,1
+products,53,50,3,1,1
+orders,504,500,4,1,0
+order_items,1505,1500,5,1,0

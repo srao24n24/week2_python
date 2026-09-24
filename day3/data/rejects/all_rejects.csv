@@ -1,0 +1,16 @@
+customer_id,customer_name,email,city,state,signup_date,customer_segment,rejection_reason,dataset,validation_timestamp,product_id,product_name,category,brand,cost_price,list_price,order_id,order_date,order_status,sales_channel,order_item_id,quantity,unit_price,discount_pct
+10.0,Customer 10,customer10@example.com,Mumbai,Maharashtra,2026-02-04,Premium,duplicate customer_id,customers,2026-09-24T06:34:59.364704,,,,,,,,,,,,,,
+,Customer 14,blankid@example.com,Bengaluru,Karnataka,2026-06-16,Corporate,missing customer_id,customers,2026-09-24T06:34:59.364704,,,,,,,,,,,,,,
+120.0,Customer 20,customer20@example.com,Bengaluru,Karnataka,,Corporate,invalid signup_date,customers,2026-09-24T06:34:59.364704,,,,,,,,,,,,,,
+,,,,,,,duplicate product_id,products,2026-09-24T06:34:59.364704,5.0,Product 5,Fashion,Evergreen,365.0,485.45,,,,,,,,
+,,,,,,,missing product_id,products,2026-09-24T06:34:59.364704,,Product 8,Sports,Cobalt,476.0,595.0,,,,,,,,
+,,,,,,,cost_price greater than list_price,products,2026-09-24T06:34:59.364704,80.0,Product 12,Home,BluePeak,9000.0,3000.0,,,,,,,,
+11.0,,,,,,,duplicate order_id,orders,2026-09-24T06:34:59.364704,,,,,,,10011.0,2026-03-24,Placed,Mobile,,,,
+999.0,,,,,,,unknown customer_id,orders,2026-09-24T06:34:59.364704,,,,,,,10900.0,2026-05-20,Placed,Store,,,,
+31.0,,,,,,,invalid order_date,orders,2026-09-24T06:34:59.364704,,,,,,,10901.0,,Placed,Web,,,,
+41.0,,,,,,,invalid order_status,orders,2026-09-24T06:34:59.364704,,,,,,,10902.0,2026-01-12,Unknown,Mobile,,,,
+,,,,,,,duplicate order_item_id,order_items,2026-09-24T06:34:59.364704,26.0,,,,,,10026.0,,,,20026.0,1.0,3875.0,0.0
+,,,,,,,invalid quantity,order_items,2026-09-24T06:34:59.364704,11.0,,,,,,10031.0,,,,23000.0,0.0,4560.0,0.0
+,,,,,,,invalid discount_pct,order_items,2026-09-24T06:34:59.364704,31.0,,,,,,10041.0,,,,23001.0,1.0,5930.0,125.0
+,,,,,,,unknown order_id,order_items,2026-09-24T06:34:59.364704,1.0,,,,,,99999.0,,,,23002.0,1.0,1100.0,0.0
+,,,,,,,unknown product_id,order_items,2026-09-24T06:34:59.364704,999.0,,,,,,10061.0,,,,23003.0,1.0,2470.0,0.0
