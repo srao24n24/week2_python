@@ -32,6 +32,19 @@ fact_sales_df["margin_pct"] = round((fact_sales_df["profit"] / fact_sales_df["ne
 fact_sales_df.to_csv(output_folder / "fact_sales.csv", index = False)
 
 # --- Lab 4.3 ---
+customer_summary = fact_sales_df.groupby("customer_id").agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
+product_summary = fact_sales_df.groupby("product_id").agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
+category_summary = fact_sales_df.groupby("category").agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
+state_summary = fact_sales_df.groupby("state").agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
+channel_summary = fact_sales_df.groupby("sales_channel").agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
+monthly_summary = fact_sales_df.groupby([pd.to_datetime(fact_sales_df["order_date"]).dt.year, pd.to_datetime(fact_sales_df["order_date"]).dt.month]
+                                        ).agg(total_net_sales = ("net", "sum"), total_profit = ("profit", "sum"), total_quantity = ("quantity", "sum")).reset_index()
 
+customer_summary.to_csv(output_folder / "customer_summary.csv", index = False)
+product_summary.to_csv(output_folder / "product_summary.csv", index = False)
+category_summary.to_csv(output_folder / "category_summary.csv", index = False)
+state_summary.to_csv(output_folder / "state_summary.csv", index = False)
+channel_summary.to_csv(output_folder / "channel_summary.csv", index = False)
+monthly_summary.to_csv(output_folder / "monthly_summary.csv", index = False)
 
-
+# --- Lab 4.4 ---
