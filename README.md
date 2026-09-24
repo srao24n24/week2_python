@@ -63,3 +63,47 @@ control totals in `day1_input_and_check.txt` (total quantity: 8, gross:
 ### Config
 Folder paths are read from `config.json` (`data_input`, `data_output`,
 `data_rejects`, `log`) rather than hardcoded.
+
+---
+
+## Day 3 - Pandas Cleaning and Data Quality
+
+**Files:** day3/day3_cleaning.py, day3/cleaning_utils.py, day3/config.json
+
+### How to run
+    python day3\day3_cleaning.py
+
+### What it does
+- Profiles all four datasets (customers, products, orders, order_items) -
+  rows, columns, dtypes, null counts, and duplicate key counts (Lab 3.1)
+- Cleans customers: trims/title-cases names, lowercases email,
+  standardizes city/state, parses signup_date (Lab 3.2)
+- Cleans products: converts prices to numeric, rejects missing IDs and
+  any row where cost_price is greater than list_price (Lab 3.3)
+- Cleans orders: parses order_date, validates order_status and
+  sales_channel against the accepted value lists, rejects orders
+  referencing an unknown customer_id (Lab 3.4)
+- Cleans order_items: validates quantity (>0), unit_price (>=0),
+  discount_pct (0-100), and rejects rows with an unknown order_id or
+  product_id foreign key (Lab 3.5)
+- Combines all four datasets' rejected rows into one file, tagged with
+  which dataset they came from and a timestamp for the run (Lab 3.6)
+- Builds a per-dataset quality report: input, valid, rejected,
+  duplicate, and missing-key counts (Lab 3.7)
+
+### Duplicate handling
+Every dataset's primary key is checked with pandas' duplicated(keep="first"):
+The first row with a given ID is treated as valid, and every later row
+sharing that same ID is rejected with reason "duplicate <field>". This
+keeps each key unique in the cleaned output while preserving a record of
+every duplicate in all_rejects.csv, rather than silently dropping them.
+
+### Outputs
+- data/output/clean_customers.csv, clean_products.csv, clean_orders.csv,
+  clean_order_items.csv
+- data/output/data_quality_report.csv
+- data/rejects/all_rejects.csv
+
+### Config
+Folder paths are read from config.json (data_input, data_output,
+data_rejects, log) rather than hardcoded, same as Day 2.
