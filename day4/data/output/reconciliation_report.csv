@@ -1,0 +1,6 @@
+check,value
+Duplicate order_item_id,0.0
+Fact row count,1200.0
+Expected row count,1200.0
+Detail revenue,9552900.0
+Summary revenue,9552900.0

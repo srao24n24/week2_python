@@ -107,3 +107,50 @@ every duplicate in all_rejects.csv, rather than silently dropping them.
 ### Config
 Folder paths are read from config.json (data_input, data_output,
 data_rejects, log) rather than hardcoded, same as Day 2.
+
+---
+
+## Day 4 - Pandas Transformations and Reconciliation
+
+**Files:** day4/day4_transform.py, day4/config.json
+
+### How to run
+    python day4\day4_transform.py
+
+Reads only the clean files produced by Day 3 (day3/data/output/) -
+no raw data is transformed directly, per the project's business rules.
+
+### What it does
+- Merges clean_order_items, clean_orders, clean_customers and
+  clean_products into one row per order item, excluding Cancelled
+  orders from the sales fact (Lab 4.1)
+- Calculates gross sales, discount, net sales, total cost, gross
+  profit and profit margin as columns on fact_sales.csv (Lab 4.2)
+- Builds summary tables by customer, product, category, state,
+  sales channel and month (Lab 4.3)
+- Ranks the top 10 customers and top 10 products by net sales, and
+  the top 3 products within each category (Lab 4.4)
+- Calculates previous-month sales and month-over-month growth per
+  month in monthly_sales.csv (Lab 4.5)
+- Builds a category-by-month revenue pivot table (Lab 4.6)
+- Reconciles the fact table against the source data: confirms
+  order_item_id is unique, the fact row count matches the expected
+  count (source order items minus Cancelled orders), and detail
+  revenue equals summary revenue (Lab 4.7)
+
+### Outputs
+- data/output/fact_sales.csv
+- data/output/customer_summary.csv, product_summary.csv,
+  category_summary.csv, state_summary.csv, channel_summary.csv,
+  monthly_summary.csv
+- data/output/top_10_customers.csv, top_10_products.csv,
+  top_3_products_category.csv
+- data/output/monthly_sales.csv
+- data/output/category_month_pivot.csv
+- data/output/reconciliation_report.csv
+
+### Config
+Points data_input directly at day3/data/output rather than keeping a
+separate copy of the clean files - Day 4 has no rejects and no
+logging requirement, so config.json only needs data_input and
+data_output.

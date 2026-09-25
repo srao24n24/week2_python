@@ -1,0 +1,13 @@
+category,product_id,total_net_sales,rank
+Electronics,31,113450.0,1.0
+Electronics,46,111500.0,2.0
+Electronics,11,109550.0,3.0
+Fashion,35,296919.0,1.0
+Fashion,45,295029.0,2.0
+Fashion,50,291654.0,3.0
+Home,2,385492.0,1.0
+Home,17,378862.0,2.0
+Home,32,372232.0,3.0
+Sports,18,215954.0,1.0
+Sports,33,212249.0,2.0
+Sports,48,208544.0,3.0
